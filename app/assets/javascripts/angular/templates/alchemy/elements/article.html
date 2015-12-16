@@ -1,0 +1,5 @@
+<article class="{{ingredient('color').value}}">
+  <h1 ng-if="ingredient_present('headline')">{{ingredient('headline').value}}</h1>
+  <img ng-if="ingredient_present('logo')" ng-src="{{ingredient('logo').value}}" class="logo">
+  <div ng-bind-html="ingredient('text').value" class="text"></div>
+</article>
